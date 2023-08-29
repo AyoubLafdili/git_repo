@@ -4,17 +4,22 @@
 
 
 int main (){
-	int number1, number2;
+
 	printf("Enter your number1:");
 	scanf("%d",&number1);
 	printf("Enter your number2:");
 	scanf("%d",&number2);
-	for(int counter = 0 ; counter <=10 ; counter++)
+	for(int counter = 1 ; counter <=1 ; counter++)
 	{
-	    printf("%d * %d = %d\n",number1, counter,number1*counter,"\t%d * %d = %d",number2,counter,number2*counter);
+	    for(int i = 0 ;i <= 10; i++ ){
+	        printf("%d * %d = %d\n",number1, i,number1*i);
+	    }
+    printf("________\n\n");
+
+	    for(int j = 0 ; j <= 10 ; j++){
+	        
+	        printf("%d * %d = %d\n",number2, j,number2*j);
+	    }
 	}
-
 return 0;
-
-
 }
